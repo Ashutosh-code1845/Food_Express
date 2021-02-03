@@ -1,0 +1,217 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* for logo image */
+#logostyle img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+/* for logo position */
+#logostyle{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+/* Navbar Styling */
+#navbar{
+    top: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* List styling */
+#navbar ol{
+display: flex;
+}
+#navbar ol li{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    display: block;
+}
+/* link styling */
+#navbar ol li a{
+    color:white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#navbar ol li a:hover{
+    color: black;
+    background-color: white;
+}
+nav::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Styling of home starts here */
+
+/* styling of homes's base */
+#home{
+    display: flex;
+    padding:95px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+}
+#home h1{
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 2.5rem;
+}
+#btn{
+    font-size: 1rem;
+    margin-top: 30px;
+    padding:0px 13px;
+    background-color:transparent;
+    border-radius: 5px;
+    box-shadow: -3px -3px 3px rgb(158, 154, 154);
+}
+/* Button Hover k acolumn bna kr chodna hai aur image background mein set krni h */
+#btn:active{
+    background-color: transparent;
+    box-shadow: 3px 3px rgb(158, 154, 154);
+}
+#home::before{
+    background-image: url('home.png');
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/* styling of all container having all 3 boxes and heading */
+#services-container{
+    margin-top: 90px;
+}
+#services{
+    display: flex;
+}
+/* styling all 3 images of services  */
+.box img{
+    padding-top: 15px;
+    height: 150px;
+    width: 300px;
+    display: block;
+    margin:auto;
+}
+/* services heading */
+#services-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+.box{
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.3rem;
+        border: 3px solid orange;
+        border-radius: 20px;
+        margin:0px 10px;
+        background-color: rgb(245, 237, 237);
+}
+.box p{
+    padding: 10px;
+    padding-top:20px;
+    text-align: center;
+}
+/* Styling of sponsor starts here */
+#container-sponsor h1{
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+#sponsor img{
+    height: 200px;
+    width: 200px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    display: block;
+    margin: auto;
+}
+#sponsor{
+    display: flex;
+    justify-content: center;
+}
+#container-sponsor::before{
+    content: "";
+    background-image: url('./sponsor.jpg');
+    height: 46%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.5;
+
+}
+/* styling contact us */
+#container-contact{
+    margin-top:20px;
+    text-align: center;
+}
+#container-contact h1{
+    margin-top: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+#container-contact form{
+    padding-top: 20px;
+}
+#contact{
+    padding: 20px 0px;
+}
+#container-contact label{
+    justify-content: center;
+    padding-top: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#container-contact input,#container-contact textarea{
+    border: none;
+    border-radius: 10px;
+}
+.ache::before{
+    content: "";
+    background-image: url('./contact.jpg');
+    height: 62%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 10px;
+    opacity: 0.4;
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(184, 177, 177);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
